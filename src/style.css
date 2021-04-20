@@ -1,0 +1,267 @@
+:root {
+  --color-primary: #4d96a9;
+  --color-primary-hover: #8fe3f9;
+  --color-highlight: #855fb1;
+  --color-highlight-hover: #d9b8ff;
+  --color-header: #28283d;
+  --color-body: #87879d;
+  --color-background: #fafafa;
+
+  --ff-primary: "Red Hat Display", sans-serif;
+
+  --fw-medium: 500;
+  --fw-black: 900;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+body,
+button {
+  font-family: var(--ff-primary);
+}
+
+body,
+button {
+  font-size: 16px;
+}
+
+.footer-body {
+  font-size: 18px;
+}
+
+.hero-subheader,
+button,
+.page-number,
+.body-header,
+.body-text,
+.footer-body {
+  line-height: 26px;
+}
+
+.body-subheader,
+.footer-header {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.hero-subheader {
+  font-weight: var(--fw-medium);
+}
+
+.hero-header,
+.page-number,
+.body-header,
+.body-subheader {
+  font-weight: var(--fw-black);
+}
+
+.hero-header {
+  color: var(--color-header);
+}
+
+.hero-subheader,
+.page-number,
+.body-text {
+  color: var(--color-body);
+}
+
+.body-header {
+  color: var(--color-primary);
+}
+
+@media (min-width: 200px) {
+  .hero-text-wrapper,
+  main,
+  .page-break,
+  .footer-text-wrapper {
+    margin: 0 24px;
+  }
+
+  header,
+  .page-break,
+  .photo-grid-wrapper {
+    margin-bottom: 64px;
+  }
+
+  main {
+    margin-bottom: 176px;
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    overflow: hidden;
+  }
+
+  header,
+  .main-text-div {
+    text-align: center;
+  }
+
+  .logo {
+    width: 119px;
+    margin-bottom: 54px;
+  }
+
+  .hero-image {
+    background-image: url(./img/tablet/image-hero.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    height: 153px;
+    margin-bottom: 48px;
+    width: 414px;
+  }
+
+  .hero-text-wrapper,
+  .footer-body {
+    margin-bottom: 32px;
+  }
+
+  .hero-text-wrapper {
+    align-items: center;
+  }
+
+  .hero-header,
+  .footer-header {
+    margin-bottom: 24px;
+  }
+
+  .hero-header {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .button-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    border: none;
+    border-radius: 29px;
+    color: white;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+  }
+
+  .download-button {
+    background-color: var(--color-primary);
+    padding: 16px 40px;
+    margin-bottom: 16px;
+    width: 193px;
+  }
+
+  .info-button {
+    background-color: var(--color-highlight);
+    padding: 16px 29px;
+    width: 139px;
+  }
+
+  .highlight {
+    color: var(--color-primary-hover);
+  }
+
+  .page-break {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    border-right: 1px solid var(--color-body);
+    height: 84px;
+    width: 1px;
+  }
+
+  .page-number {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-body);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 15px 19px;
+  }
+
+  .photo {
+    border-radius: 8px;
+    height: 143px;
+    width: 151px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+
+  .photo-grid-wrapper {
+    display: grid;
+    grid-template-areas: "first second" "third fourth";
+    grid-template-columns: repeat(2, 151px);
+    grid-template-rows: repeat(2, 143px);
+    column-gap: 25px;
+    row-gap: 24px;
+  }
+
+  .photo .first {
+    grid-area: first;
+  }
+
+  .body-header {
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+  }
+
+  .body-subheader {
+    margin-bottom: 32px;
+  }
+
+  footer {
+    background-color: var(--color-primary);
+    height: 428px;
+    position: relative;
+  }
+
+  .footer-background-wrapper {
+    background-image: url(./img/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 428px;
+    opacity: 10.45%;
+    text-align: center;
+    width: 375px;
+  }
+
+  .footer-page-break {
+    position: absolute;
+    top: -112px;
+    left: 135.5px;
+    z-index: 3;
+  }
+
+  .footer-text-wrapper {
+    color: var(--color-background);
+    text-align: center;
+    top: -336px;
+    position: relative;
+  }
+
+  .footer-button {
+    background-color: var(--color-highlight);
+  }
+}
